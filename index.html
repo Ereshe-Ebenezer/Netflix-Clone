@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NETFLIX — Watch TV Shows Online, Watch Movies Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-left">
+      <a href="#" class="logo">NETFLIX</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New & Popular</a></li>
+        <li><a href="#">My List</a></li>
+        <li><a href="#">Browse by Languages</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box" id="searchBox">
+        <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+        <input type="text" id="searchInput" placeholder="Titles, people, genres" />
+      </div>
+      <span class="kids">KIDS</span>
+      <i class="fa-solid fa-bell notification"></i>
+      <div class="profile" id="profile">
+        <img src="https://i.pravatar.cc/40?img=12" alt="profile" />
+        <i class="fa-solid fa-caret-down"></i>
+        <div class="profile-dropdown" id="profileDropdown">
+          <div class="profile-item">
+            <img src="https://i.pravatar.cc/30?img=5" alt=""><span>Sarah</span>
+          </div>
+          <div class="profile-item">
+            <img src="https://i.pravatar.cc/30?img=14" alt=""><span>Kids</span>
+          </div>
+          <hr>
+          <a href="#"><i class="fa-solid fa-pen"></i> Manage Profiles</a>
+          <a href="#"><i class="fa-solid fa-user"></i> Account</a>
+          <a href="#"><i class="fa-solid fa-circle-question"></i> Help Center</a>
+          <hr>
+          <a href="#">Sign out of Netflix</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-fade"></div>
+    <div class="hero-content">
+      <span class="netflix-tag">N <span>SERIES</span></span>
+      <h1 class="hero-title">STRANGER THINGS</h1>
+      <div class="hero-meta">
+        <span class="match">98% Match</span>
+        <span>2024</span>
+        <span class="age-tag">16+</span>
+        <span>4 Seasons</span>
+        <span class="hd-tag">HD</span>
+      </div>
+      <p class="hero-desc">
+        When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl. A love letter to the '80s classics.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-play"><i class="fa-solid fa-play"></i> Play</button>
+        <button class="btn btn-info" onclick="openModal(0)"><i class="fa-solid fa-circle-info"></i> More Info</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT ROWS ===== -->
+  <main class="content">
+    <!-- Rows will be injected via JavaScript -->
+  </main>
+
+  <!-- ===== PREVIEW MODAL ===== -->
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+      <!-- Injected -->
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Audio Description</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Legal Notices</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Corporate Information</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Media Center</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <button class="lang-btn"><i class="fa-solid fa-globe"></i> English</button>
+    <p class="copyright">© 2025 Netflix Clone, Inc.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
